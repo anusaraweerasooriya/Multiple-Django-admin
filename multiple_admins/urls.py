@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from CustomerManagement.admin import customer_admin
+from DeliveryManagement.admin import delivery_admin
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('customer_admin/', customer_admin.urls),
+    path('delivery_admin/', delivery_admin.urls),
 ]

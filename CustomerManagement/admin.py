@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+
+class CustomerAdmin(admin.AdminSite):
+    site_header = 'Customer Admin Area'
+
+
+customer_admin = CustomerAdmin(name='customer_admin')
